@@ -11,7 +11,9 @@ const AuthForm = ({ onLogin }) => {
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
 
-  const API_BASE_URL = 'https://server-side-05i1.onrender.com';
+// AuthForm.js
+const API_BASE_URL = 'https://server-side-05i1.onrender.com/api';
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
