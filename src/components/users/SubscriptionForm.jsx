@@ -322,7 +322,7 @@ const handleChange = (e) => {
         }
       }
 
-      const response = await fetch("http://localhost:5000/api/subscriptions", {
+      const response = await fetch("https://server-side-05i1.onrender.com/api/subscriptions", {
         method: "POST",
         body: data,
       });
