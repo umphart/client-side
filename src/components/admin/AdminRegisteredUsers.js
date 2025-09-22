@@ -8,7 +8,7 @@ const AdminRegisteredUsers = () => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [modalType, setModalType] = useState(null); // "docs" | "details"
 
-  const API_BASE_URL = "https://server-side-05i1.onrender.com/api";
+  const API_BASE_URL = "http://localhost:5000/api";
 
   const getAuthToken = () => localStorage.getItem("adminToken");
 

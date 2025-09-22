@@ -11,7 +11,7 @@ const UserSubsequentPayments = ({ user }) => {
     const fetchPayments = async () => {
       try {
         const res = await fetch(
-          `https://server-side-05i1.onrender.com//api/user-subsequent-payments/user/${user.id}`
+          `http://localhost:5000/api/user-subsequent-payments/user/${user.id}`
         );
         const data = await res.json();
         console.log("Payment data:", data);

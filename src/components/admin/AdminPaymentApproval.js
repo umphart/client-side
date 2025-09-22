@@ -22,7 +22,7 @@ const AdminPaymentApproval = () => {
 
   const fetchAllPayments = async () => {
     try {
-      const res = await fetch("https://server-side-05i1.onrender.com/api/user-subsequent-payments");
+      const res = await fetch("http://localhost:5000/api/user-subsequent-payments");
       const data = await res.json();
       console.log("All payments data:", data);
       if (data.success) {
@@ -121,7 +121,7 @@ const AdminPaymentApproval = () => {
 
     try {
       const res = await fetch(
-        `https://server-side-05i1.onrender.com/api/user-subsequent-payments/${paymentId}/status`,
+        `http://localhost:5000/api/user-subsequent-payments/${paymentId}/status`,
         {
           method: "PATCH",
           headers: {
